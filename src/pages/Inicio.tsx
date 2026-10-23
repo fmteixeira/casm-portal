@@ -17,7 +17,7 @@ export default function Inicio() {
         <HeroSlides />
         <div className="absolute inset-0 bg-linear-to-b from-scrim/0 from-25% to-scrim/96 to-92% lg:hidden" />
         <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,rgb(15_17_14/0.95)_0%,rgb(15_17_14/0.6)_45%,rgb(15_17_14/0)_75%)] lg:block" />
-        <div className="wrap relative flex flex-col gap-[18px] pb-10 lg:gap-6 lg:pb-20">
+        <div className="wrap text-legible relative flex flex-col gap-[18px] pb-10 lg:gap-6 lg:pb-20">
           <Logo className="hidden h-[150px] w-[126px] lg:block" />
           <div className="kicker flex items-center gap-2.5 lg:gap-3">
             <span className="h-0.5 w-7 bg-accent lg:w-9" />
@@ -27,7 +27,7 @@ export default function Inicio() {
             {hero.title}
           </h1>
           <p className="m-0 max-w-[330px] text-[17px] text-body lg:max-w-[520px] lg:text-xl">{hero.text}</p>
-          <div className="mt-1.5 flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:mt-2 lg:gap-3.5">
+          <div className="mt-1.5 flex flex-col gap-3 [text-shadow:none] sm:flex-row sm:flex-wrap lg:mt-2 lg:gap-3.5">
             <ButtonLink to="/eventos">
               Ver eventos <ArrowRight />
             </ButtonLink>

@@ -71,6 +71,33 @@
   @apply border border-dashed border-line2 bg-scrim/70 px-2 py-1.5 font-sans text-[11px]/none font-semibold tracking-[0.12em] text-faint uppercase;
 }
 
+/* Keeps light text readable over bright parts of a photo: a soft dark glow
+   behind the whole text block, plus a halo on the letters themselves.
+   The element must be positioned (relative/absolute). */
+@utility text-legible {
+  isolation: isolate;
+  text-shadow:
+    0 1px 2px rgb(0 0 0 / 0.7),
+    0 2px 14px rgb(0 0 0 / 0.55);
+  &::before {
+    content: '';
+    position: absolute;
+    /* Large box so the glow fades gently far beyond the text; the banner clips the overflow. */
+    inset: -180px -360px;
+    z-index: -1;
+    pointer-events: none;
+    /* closest-side: the glow reaches zero before the box edges, so no hard line shows. */
+    background: radial-gradient(
+      closest-side at 35% 50%,
+      rgb(15 17 14 / 0.8) 0%,
+      rgb(15 17 14 / 0.68) 25%,
+      rgb(15 17 14 / 0.45) 50%,
+      rgb(15 17 14 / 0.2) 75%,
+      rgb(15 17 14 / 0) 100%
+    );
+  }
+}
+
 @utility wrap {
   @apply mx-auto box-border w-full max-w-(--wrap,1240px) px-5 lg:px-8;
 }

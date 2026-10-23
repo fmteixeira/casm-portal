@@ -55,7 +55,7 @@ export function PageHero({ kicker, title, image, alt }: { kicker: string; title:
     <section className="ph relative flex h-[300px] flex-col justify-end overflow-hidden pb-7 lg:h-[420px] lg:pb-14">
       {image && <img src={image} alt={alt} className="absolute inset-0 size-full object-cover" />}
       <div className="absolute inset-0 bg-linear-to-b from-scrim/0 from-15% to-scrim/96 to-95%" />
-      <div className="wrap relative flex flex-col gap-2.5">
+      <div className="wrap text-legible relative flex flex-col gap-2.5">
         <div className="kicker">{kicker}</div>
         <h1 className="m-0 font-display text-[64px]/[0.9] font-extrabold uppercase lg:text-[96px]">{title}</h1>
       </div>
