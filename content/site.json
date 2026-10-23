@@ -1,0 +1,19 @@
+{
+  "name": "Clube de Airsoft de São Miguel",
+  "shortName": "CASM",
+  "tagline": "Airsoft · São Miguel",
+  "description": "Clube de Airsoft de São Miguel. Jogos, eventos e comunidade na ilha de São Miguel, Açores.",
+  "email": "[email do clube]",
+  "phone": "[+351 telefone]",
+  "location": "[Local do campo]",
+  "address": ["[Morada / localidade]", "São Miguel, Açores"],
+  "nif": "[n.º de contribuinte]",
+  "mapsUrl": "https://maps.google.com/",
+  "videoUrl": "",
+  "social": {
+    "instagramHandle": "[instagram_casm]",
+    "instagram": "https://instagram.com/",
+    "facebook": "https://facebook.com/",
+    "youtube": "https://youtube.com/"
+  }
+}

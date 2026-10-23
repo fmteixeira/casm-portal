@@ -1,0 +1,9 @@
+{
+  "title": "Jogos de 2026",
+  "items": [
+    { "file": "briefing.jpg", "alt": "Briefing antes do jogo" },
+    { "file": "combate-nas-ruinas.jpg", "alt": "Combate entre as ruínas" },
+    { "file": "encosta-vulcanica.jpg", "alt": "Jogadores junto a uma encosta de pedra vulcânica" },
+    { "file": "grupo-no-bunker.jpg", "alt": "Grupo junto a um bunker" }
+  ]
+}

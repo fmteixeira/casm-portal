@@ -1,0 +1,69 @@
+{
+  "hero": { "kicker": "CASM", "title": "Sobre nós", "image": "../../galeria/operacao-pedreira/equipa-completa.jpg", "alt": "Equipa do CASM" },
+  "intro": "Somos um clube de airsoft de São Miguel, Açores. Tudo o que precisas de saber antes de entrar em campo, ponto por ponto.",
+  "sections": [
+    {
+      "kicker": "Quem somos",
+      "title": "Um clube feito por jogadores",
+      "text": "O CASM nasceu em [ano] para dar a São Miguel um espaço organizado de airsoft. Hoje reunimos [n.º] sócios e recebemos jogadores de toda a ilha e de fora dela.",
+      "images": [{ "src": "../../galeria/jogos-2026/grupo-no-bunker.jpg", "alt": "Um dos primeiros grupos do clube" }]
+    },
+    {
+      "kicker": "O campo",
+      "title": "[Nome do campo]",
+      "text": "Cerca de [área] de terreno em [localidade], com mata cerrada, zonas abertas e estruturas para jogo em espaço confinado. O campo é mantido pelos sócios ao longo de todo o ano.",
+      "images": [
+        { "src": "../../galeria/jogo-na-mata/camuflado-na-mata.jpg", "alt": "Jogador camuflado na mata" },
+        { "src": "../../galeria/fabrica-abandonada/estrutura-em-ruinas.jpg", "alt": "Estrutura em ruínas no campo" }
+      ],
+      "stats": [
+        { "value": "[X ha]", "label": "Área" },
+        { "value": "[N]", "label": "Zonas de jogo" },
+        { "value": "[Sim/Não]", "label": "Estacionamento" }
+      ]
+    },
+    {
+      "kicker": "Como jogamos",
+      "title": "Jogos para todos os estilos",
+      "text": "Jogos casuais ao domingo, operações milsim com objetivos e narrativa, e eventos especiais ao longo do ano. Cada jogo tem briefing, equipas equilibradas e um organizador responsável em campo.",
+      "tags": ["Casual", "Milsim", "CQB", "Eventos especiais"],
+      "images": [{ "src": "../../galeria/jogos-2026/briefing.jpg", "alt": "Briefing antes do jogo" }]
+    },
+    {
+      "kicker": "Segurança",
+      "title": "Regras que não se negociam",
+      "text": "A segurança vem primeiro, sempre. Antes de cada jogo:",
+      "checklist": [
+        "Proteção ocular certificada, obrigatória em campo",
+        "Cronografagem de todas as réplicas · limites: [valores FPS/joules]",
+        "Zona segura: carregadores fora e réplicas em segurança",
+        "Idade mínima: [idade]"
+      ]
+    },
+    {
+      "kicker": "Fair play",
+      "title": "Quem é atingido, sai",
+      "text": "O airsoft vive da honestidade. Chamamos os nossos hits, respeitamos os árbitros e tratamos a equipa adversária como queremos ser tratados."
+    },
+    {
+      "kicker": "Equipamento",
+      "title": "Não tens réplica?",
+      "text": "[Indicar se o clube tem material de aluguer: réplicas, máscaras, coletes e preços.] Fala connosco antes do teu primeiro jogo.",
+      "images": [{ "src": "../../galeria/jogo-na-mata/jogadores-equipados.jpg", "alt": "Jogadores equipados" }]
+    },
+    {
+      "kicker": "Sócios",
+      "title": "Junta-te ao clube",
+      "text": "Ser sócio dá acesso a [vantagens: jogos com desconto, prioridade em eventos, seguro]. Quota: [valor].",
+      "cta": { "label": "Como participar", "to": "/como-participar" }
+    }
+  ],
+  "strip": [
+    "../../galeria/jogo-na-mata/trilho-na-mata.jpg",
+    "../../galeria/fabrica-abandonada/evacuacao-de-ferido.jpg",
+    "../../galeria/fabrica-abandonada/patrulha-graffiti.jpg",
+    "../../galeria/jogos-2026/combate-nas-ruinas.jpg",
+    "../../galeria/jogos-2026/encosta-vulcanica.jpg",
+    "../../galeria/operacao-pedreira/foto-de-grupo.jpg"
+  ]
+}

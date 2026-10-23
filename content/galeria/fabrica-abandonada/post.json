@@ -1,0 +1,10 @@
+{
+  "title": "Fábrica abandonada",
+  "items": [
+    { "file": "grupo-nas-ruinas.jpg", "alt": "Grupo em frente a um edifício em ruínas" },
+    { "file": "patrulha-graffiti.jpg", "alt": "Patrulha junto a uma parede com graffiti" },
+    { "file": "evacuacao-de-ferido.jpg", "alt": "Jogador a evacuar um colega" },
+    { "file": "estrutura-em-ruinas.jpg", "alt": "Jogador junto a uma estrutura em ruínas" },
+    { "file": "espaco-confinado.jpg", "alt": "Jogo em espaço confinado" }
+  ]
+}

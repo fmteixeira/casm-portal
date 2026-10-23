@@ -1,0 +1,5 @@
+{
+  "hero": { "kicker": "Fala connosco", "title": "Contactos", "image": "../../galeria/fabrica-abandonada/estrutura-em-ruinas.jpg", "alt": "Campo do CASM" },
+  "intro": "A forma mais rápida de nos contactar é por email. Para assuntos urgentes no dia de jogo, liga-nos.",
+  "subjects": ["Quero experimentar airsoft", "Inscrição num evento", "Tornar-me sócio", "Parcerias", "Outro"]
+}

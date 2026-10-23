@@ -1,0 +1,8 @@
+{
+  "title": "Jogo na mata",
+  "items": [
+    { "file": "trilho-na-mata.jpg", "alt": "Jogadores num trilho na mata" },
+    { "file": "camuflado-na-mata.jpg", "alt": "Jogador camuflado na mata" },
+    { "file": "jogadores-equipados.jpg", "alt": "Jogadores equipados junto a um muro" }
+  ]
+}

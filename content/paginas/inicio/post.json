@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "kicker": "São Miguel · Açores",
+    "title": "Clube de Airsoft de São Miguel",
+    "text": "Jogos regulares, eventos temáticos e uma comunidade que joga limpo. Dentro e fora do campo.",
+    "image": "../../galeria/operacao-pedreira/a-caminho-do-campo.jpg",
+    "imageWide": "../../galeria/operacao-pedreira/travessia-pedreira.jpg",
+    "alt": "Jogadores do CASM a caminho do campo"
+  },
+  "about": {
+    "title": "O que é o CASM?",
+    "paragraphs": [
+      "O Clube de Airsoft de São Miguel junta jogadores de todos os níveis na ilha de São Miguel, nos Açores. Organizamos jogos regulares e eventos especiais, sempre com a segurança e o fair play em primeiro lugar.",
+      "Quer estejas a dar os primeiros passos ou já tenhas anos de campo, há lugar para ti na equipa."
+    ],
+    "image": "../../galeria/operacao-pedreira/grupo-muro-amarelo.jpg",
+    "alt": "Grupo do CASM junto a um muro amarelo"
+  },
+  "activities": [
+    { "kicker": "Organizamos", "title": "Eventos", "to": "/eventos", "image": "../../galeria/fabrica-abandonada/espaco-confinado.jpg", "alt": "Jogo em espaço confinado" },
+    { "kicker": "Mantemos", "title": "O campo", "to": "/sobre", "image": "../../galeria/fabrica-abandonada/grupo-nas-ruinas.jpg", "alt": "Edifício em ruínas no campo" },
+    { "kicker": "Temos", "title": "Comunidade", "to": "/galeria", "image": "../../galeria/operacao-pedreira/foto-de-grupo.jpg", "alt": "Foto de grupo dos jogadores" }
+  ],
+  "instagram": {
+    "title": "Segue-nos no Instagram",
+    "text": "Fotos dos jogos, avisos de última hora e bastidores do campo."
+  }
+}
