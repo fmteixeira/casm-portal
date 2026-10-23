@@ -21,7 +21,14 @@ npm run build    # static site in dist/
 | `/contactos` | Contactos |
 
 The site uses browser-history URLs, so the host must serve `index.html` for unknown paths
-(SPA fallback). For example, Netlify needs `/* /index.html 200` and Vercel needs a rewrite to `/index.html`.
+(SPA fallback).
+
+## Hosting (Netlify)
+
+`netlify.toml` holds the whole setup: build command, `dist` output, Node 24, the SPA fallback,
+and long-lived caching for hashed files in `/assets`. In Netlify, choose
+**Add new project → Import an existing project**, pick this GitHub repo, and keep the detected settings.
+Every push to `main` redeploys the site.
 
 ## Content
 
