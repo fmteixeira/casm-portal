@@ -74,3 +74,22 @@
 @utility wrap {
   @apply mx-auto box-border w-full max-w-(--wrap,1240px) px-5 lg:px-8;
 }
+
+/* Home hero: slow leftward pan. Three copies so a returning slide restarts its animation. */
+@keyframes hero-pan-0 {
+  from { transform: scale(1.1) translateX(3%); }
+  to { transform: scale(1.1) translateX(-3%); }
+}
+@keyframes hero-pan-1 {
+  from { transform: scale(1.1) translateX(3%); }
+  to { transform: scale(1.1) translateX(-3%); }
+}
+@keyframes hero-pan-2 {
+  from { transform: scale(1.1) translateX(3%); }
+  to { transform: scale(1.1) translateX(-3%); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero-pan-0 { animation: hero-pan-0 var(--pan-duration) linear forwards; }
+  .hero-pan-1 { animation: hero-pan-1 var(--pan-duration) linear forwards; }
+  .hero-pan-2 { animation: hero-pan-2 var(--pan-duration) linear forwards; }
+}

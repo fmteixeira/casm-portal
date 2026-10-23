@@ -3,9 +3,13 @@
     "kicker": "São Miguel · Açores",
     "title": "Clube de Airsoft de São Miguel",
     "text": "Jogos regulares, eventos temáticos e uma comunidade que joga limpo. Dentro e fora do campo.",
-    "image": "../../galeria/operacao-pedreira/a-caminho-do-campo.jpg",
-    "imageWide": "../../galeria/operacao-pedreira/travessia-pedreira.jpg",
-    "alt": "Jogadores do CASM a caminho do campo"
+    "slideSeconds": 6,
+    "slides": [
+      { "image": "../../galeria/operacao-pedreira/a-caminho-do-campo.jpg", "imageWide": "../../galeria/operacao-pedreira/travessia-pedreira.jpg", "alt": "Jogadores do CASM a caminho do campo" },
+      { "image": "../../galeria/fabrica-abandonada/espaco-confinado.jpg", "alt": "Jogo em espaço confinado" },
+      { "image": "../../galeria/jogos-2026/encosta-vulcanica.jpg", "alt": "Jogadores junto a uma encosta de pedra vulcânica" },
+      { "image": "../../galeria/fabrica-abandonada/patrulha-graffiti.jpg", "alt": "Patrulha junto a uma parede com graffiti" }
+    ]
   },
   "about": {
     "title": "O que é o CASM?",

@@ -18,7 +18,15 @@ export type Site = {
 export type Hero = { kicker: string; title: string; image: string; alt: string }
 
 export type InicioPage = {
-  hero: Hero & { text: string; imageWide: string }
+  hero: {
+    kicker: string
+    title: string
+    text: string
+    /** Seconds each slide stays on screen. */
+    slideSeconds?: number
+    /** `imageWide` replaces `image` on wide screens. */
+    slides: { image: string; imageWide?: string; alt: string }[]
+  }
   about: { title: string; paragraphs: string[]; image: string; alt: string }
   activities: { kicker: string; title: string; to: string; image: string; alt: string }[]
   instagram: { title: string; text: string }

@@ -1,3 +1,4 @@
+import { useEffect, useState, type CSSProperties } from 'react'
 import { Link } from 'react-router'
 import { EventMeta } from '../components/events'
 import { ArrowRight, ChevronRight, Instagram, Play } from '../components/icons'
@@ -13,10 +14,7 @@ export default function Inicio() {
   return (
     <>
       <section className="ph relative flex h-[640px] items-end overflow-hidden lg:h-auto lg:min-h-[720px]">
-        <picture>
-          <source media="(min-width: 1024px)" srcSet={hero.imageWide} />
-          <img src={hero.image} alt={hero.alt} className="absolute inset-0 size-full object-cover" />
-        </picture>
+        <HeroSlides />
         <div className="absolute inset-0 bg-linear-to-b from-scrim/0 from-25% to-scrim/96 to-92% lg:hidden" />
         <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,rgb(15_17_14/0.95)_0%,rgb(15_17_14/0.6)_45%,rgb(15_17_14/0)_75%)] lg:block" />
         <div className="wrap relative flex flex-col gap-[18px] pb-10 lg:gap-6 lg:pb-20">
@@ -159,6 +157,47 @@ export default function Inicio() {
       </section>
     </>
   )
+}
+
+const FADE_SECONDS = 1.5
+
+/**
+ * Hero images that crossfade every `slideSeconds` while slowly panning left.
+ * The pan runs through the fade-out too, so the outgoing image never stops moving.
+ */
+function HeroSlides() {
+  const { slides, slideSeconds = 6 } = hero
+  const [step, setStep] = useState(0)
+
+  useEffect(() => {
+    if (slides.length < 2) return
+    const id = setInterval(() => setStep((s) => s + 1), slideSeconds * 1000)
+    return () => clearInterval(id)
+  }, [slides.length, slideSeconds])
+
+  const current = step % slides.length
+  const previous = step > 0 ? (step - 1) % slides.length : -1
+  const panStyle = { '--pan-duration': `${slideSeconds + FADE_SECONDS}s` } as CSSProperties
+
+  return slides.map((slide, i) => {
+    const visible = i === current
+    // Three identical keyframes take turns so the pan restarts whenever a slide comes back,
+    // even with only two slides (where the incoming one was the outgoing one a moment ago).
+    const pan = visible ? `hero-pan-${step % 3}` : i === previous ? `hero-pan-${(step - 1) % 3}` : ''
+    return (
+      <picture key={slide.image}>
+        {slide.imageWide && <source media="(min-width: 1024px)" srcSet={slide.imageWide} />}
+        <img
+          src={slide.image}
+          alt={visible ? slide.alt : ''}
+          aria-hidden={!visible}
+          fetchPriority={i === 0 ? 'high' : 'low'}
+          style={panStyle}
+          className={`absolute inset-0 size-full object-cover transition-opacity duration-1500 ease-in-out ${visible ? 'opacity-100' : 'opacity-0'} ${pan}`}
+        />
+      </picture>
+    )
+  })
 }
 
 function AboutMedia() {
